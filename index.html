@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Arsl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="wrapper">
+            <div id="input">
+                <form oninput="ageo.value=age.value">
+                    <div class="input-row">
+                        <div class="left">
+                            <label for="fname">Type Your First Name: </label>
+                        </div>
+                        <div class="right">
+                            <input type="text" name="fname" id="fname" placeholder="Type Your First Name" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="left">
+                            <label for="lname">Type Your Last Name: </label>
+                        </div>
+                        <div class="right">
+                            <input type="text" name="lname" id="lname" placeholder="Type Your Last Name" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="left">
+                            <label for="fathername">Type Your Father Name: </label>
+                        </div>
+                        <div class="right">
+                            <input type="text" name="fathername" id="fathername" placeholder="Type Your Father Name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="left">
+                            <label for="age">Select Your Age: </label>
+                        </div>
+                        <div class="right" style="color: white;">
+                            <input type="range" name="age" id="age" min="10" max="60" value="18"> =
+                            <output name="ageo">(Age)</output>
+                            <span class="year">Year</span>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="left">
+                            <label for="phone">Type Your Phone Number: </label>
+                        </div>
+                        <div class="right">
+                            <input type="text" name="phone" id="phone" placeholder="Type Your Phone Number" required
+                                maxlength="11">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="left">
+                            <label for="email">Type Your Email Address: </label>
+                        </div>
+                        <div class="right">
+                            <input type="email" name="email" id="email" placeholder="Type Your Email" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="left">
+                            <label for="image">Upload Your Picture: </label>
+                        </div>
+                        <div class="right">
+                            <input type="file" name="image" id="image" required>
+                        </div>
+                    </div>
+
+                    <input type="button" value="Show Form" class="button" onclick="mydata()" >
+                    <input type="reset" value="Clear Form" class="button" onclick="mydatac()">
+                    <input type="submit" value="Submit Form" class="button">
+
+                </form>
+            </div>
+
+
+
+            <div id="output">
+                <div id="oBody" style="display: none;">
+                    <h1 id="tableh1">Please Fill Form!</h1>
+                    <img src="exp.jpg" alt="Your Pic" id="p-img">
+                    <table>
+                        <tr>
+                            <td id="t01">First Name:</td>
+                            <td id="t1" class="td"></td>
+                        </tr>
+                        <tr>
+                            <td id="t02">Last Name:</td>
+                            <td id="t2" class="td"></td>
+                        </tr>
+                        <tr>
+                            <td id="t03">Father Name:</td>
+                            <td id="t3" class="td"></td>
+                        </tr>
+                        <tr>
+                            <td id="t04">Age:</td>
+                            <td id="t4" class="td"></td>
+                        </tr>
+                        <tr>
+                            <td id="t05">Phone Number:</td>
+                            <td id="t5" class="td"></td>
+                        </tr>
+                        <tr>
+                            <td id="t06">Email Address:</td>
+                            <td id="t6" class="td"></td>
+                        </tr>
+                    </table>
+                    <button id="hideB" onclick="hideB()">Hide Table <span class="a"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

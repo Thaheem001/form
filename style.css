@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+}
+
+#main {
+    width: 95vw;
+    height: 95vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 2.5vh 2.5vw;
+    border-radius: 25px;
+    padding: 30px 0px;
+}
+
+#wrapper {
+    width: 95%;
+    height: 100%;
+    border: 2px solid white;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+#input, #output {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#input {
+    border-right: 1.5px solid white;
+    padding: 20px;
+}
+
+#output {
+    border-left: 1.5px solid white;
+    position: relative;
+    overflow: auto;
+}
+
+#input input {
+    width: 100%;
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+}
+
+.button {
+    /* width: 30% !important; */
+    height: 50px !important;
+    margin: 10px auto;
+}
+
+table {
+    width: 95%;
+    margin: 140px auto 40px;
+    background-color: white;
+    font-size: 20px;
+}
+
+table td {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+
+.td {
+    width: 65%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: rgb(189, 189, 189);
+}
+
+#tableh1 {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+#p-img {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#hideB {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding-right: 20px;
+    position: relative;
+    margin-left: 20px;
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+span.a {
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 10px;
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+}
+
+.input-row {
+    width: 100%;
+    height: 40px;
+}
+
+.input-row .left {
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+    float: left;
+    /* display: inline-block; */
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.input-row .right {
+    width: 50%;
+    height: 30px;
+    float: right;
+    margin: 10px;
+    /* display: inline-block; */
+}
+
+input[type=text], input[type=email] {
+    height: 30px;
+    padding-left: 10px;
+}
+
+#age {
+    width: 65% !important;
+}
+
+input[type=reset] {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+input[type=submit] {
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+input[type=button] {
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        height: 154vh;
+    }
+    #input, #output {
+        width: 100%;
+        border: none;
+        height: auto;
+    }
+    #input {
+        border-bottom: 1.5px solid white;
+        padding-bottom: 90px;
+    }
+    #output {
+        border-top: 1.5px solid white;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #main {
+        width: auto;
+        margin: 0 0;
+        border-radius: 0;
+        height: 245vh;
+    }
+    .input-row .left {
+        width: 70%;
+        font-size: 15px;
+        margin: 0;
+    }
+    .input-row .right {
+        width: 97%;
+    }
+    .input-row {
+        overflow: hidden;
+        height: 95px;
+    }
+    #output{
+        padding-top: 55px;
+    }
+    #tableh1 {
+        top: 133px;
+        left: 20px;
+        font-size: 28px;
+    }
+}
